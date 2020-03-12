@@ -1,0 +1,11 @@
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/cmake-build-debug/communication/CMakeFiles/communication.dir
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/cmake-build-debug/communication/CMakeFiles/edit_cache.dir
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/cmake-build-debug/communication/CMakeFiles/rebuild_cache.dir
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/cmake-build-debug/control/CMakeFiles/control.dir
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/cmake-build-debug/control/CMakeFiles/edit_cache.dir
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/cmake-build-debug/control/CMakeFiles/rebuild_cache.dir
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/cmake-build-debug/application/CMakeFiles/application_exe.dir
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/cmake-build-debug/application/CMakeFiles/edit_cache.dir
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/cmake-build-debug/application/CMakeFiles/rebuild_cache.dir

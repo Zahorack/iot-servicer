@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../communication/include/TcpSocket.h
+Socket.h
+../communication/include/Socket.h
+
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/application/main.cpp
+iostream
+-
+../communication/include/TcpSocket.h
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/communication/include/TcpSocket.h
+../control/include/Control.h
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/control/include/Control.h
+
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/communication/include/Socket.h
+winsock.h
+-
+iostream
+-
+string
+-
+
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/communication/include/TcpSocket.h
+Socket.h
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/communication/include/Socket.h
+
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/control/include/Control.h
+TcpSocket.h
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/control/include/TcpSocket.h
+Timer.h
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/control/include/Timer.h
+conio.h
+-
+
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/control/include/Timer.h
+stdint.h
+C:/Users/oholly.DQI/CLionProjects/iot-servicer/control/include/stdint.h
+time.h
+-
+
