@@ -2,7 +2,7 @@
 // Created by oholly on 11. 3. 2020.
 //
 
-#include "Timer.h"
+#include "../include/Timer.h"
 
 
 static uint32_t getMillis()

@@ -1,13 +1,13 @@
 #include <iostream>
 
-#include "../communication/include/TcpSocket.h"
-#include "../control/include/Control.h"
+
+#include "TcpSocket.h"
+#include "Control.h"
+#include "Communication.h"
 
 using namespace std;
 
-
 int main() {
-
     char ip_string[] = "192.168.100.10";
     cout<<"Type ESP32 IP address: ";
     scanf("%s", ip_string);
@@ -22,12 +22,11 @@ int main() {
 /*Tcp client socket implementation*/
     TcpSocket tcp;
     tcp.beginClient(ip_string, TARGET_PORT);
-    Control controller(tcp.getFileDescriptor());
 
 
-    controller.begin();
+    Communication communicator(tcp.getFileDescriptor());
 
     while(1) {
-        controller.update();
+        communicator.update();
     }
 }

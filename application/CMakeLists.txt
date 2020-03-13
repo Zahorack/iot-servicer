@@ -6,8 +6,11 @@ set(SOURCE_FILES "main.cpp")
 add_executable(application_exe ${SOURCE_FILES})
 
 #include_directories("../communication")
+target_link_libraries(application_exe socket)
+target_link_libraries(application_exe protocol)
 target_link_libraries(application_exe communication)
 target_link_libraries(application_exe control)
+target_link_libraries(application_exe utilities)
 
 add_custom_command(
         TARGET application_exe POST_BUILD VERBATIM

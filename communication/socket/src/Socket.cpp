@@ -21,7 +21,6 @@ Socket::~Socket()
     close();
 }
 
-
 void Socket::connects(char *ip, int port)
 {
 
@@ -38,7 +37,6 @@ void Socket::connects(char *ip, int port)
     }
 }
 
-
 void Socket::binds(int port)
 {
     cout<<"Binding socket...";
@@ -52,23 +50,40 @@ void Socket::binds(int port)
         exit(1);
     }
     cout<<("OK\n");
-
 }
 
 int Socket::receive(char *data, int size)
 {
     int targetAddrLen = sizeof(m_ipAddress);
-
     int ret = recvfrom(m_socketFd, data, size, 0, (struct sockaddr *)&m_ipAddress, &targetAddrLen);
-
     if(ret < 0) {
         cout <<"Server: recvfrom() failed with error code:"<<WSAGetLastError()<<"\n";
     }
     else if(ret > 0) {
         data[ret] = '\0';        // Convert to cstring
     }
-
     return ret;
+}
+
+char Socket::read()
+{
+    int targetAddrLen = sizeof(m_ipAddress);
+    char data;
+
+    int ret = recvfrom(m_socketFd, &data, 1, 0, (struct sockaddr *)&m_ipAddress, &targetAddrLen);
+    if(ret < 0) {
+        cout <<"Server: recvfrom() failed with error code:"<<WSAGetLastError()<<"\n";
+    }
+    return data;
+}
+
+u_long Socket::available()
+{
+    u_long bytes_available;
+
+    ioctlsocket(m_socketFd, FIONREAD, &bytes_available);
+
+    return bytes_available;
 }
 
 void Socket::send( char *data, int size)

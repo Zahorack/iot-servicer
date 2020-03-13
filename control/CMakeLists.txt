@@ -6,4 +6,4 @@ project(control)
 add_library(control OBJECT  ${files})
 target_include_directories(control PUBLIC include)
 
-target_link_libraries(control PUBLIC communication)
+target_link_libraries(control socket utilities)

@@ -5,9 +5,12 @@
 #ifndef IOT_CONTROLLER_SOCKET_H
 #define IOT_CONTROLLER_SOCKET_H
 
+//#include <winsock2.h>
 #include <winsock.h>
 #include <iostream>
 #include <string>
+
+//#pragma comment(lib, "Ws2_32.lib")
 
 #define TARGET_PORT 54321
 
@@ -33,8 +36,10 @@ public:
     SOCKADDR_IN getIP();
     SOCKET getFileDescriptor();
 
+    u_long available();
     void send( char *data, int size);
     int receive(char *data, int size);
+    char read();
 
 
 };
